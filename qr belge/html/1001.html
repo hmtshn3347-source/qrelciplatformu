@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+<meta charset="UTF-8">
+<title>Evrak 1001</title>
+
+<style>
+
+body{
+text-align:center;
+font-family:Arial;
+}
+
+img{
+width:220px;
+margin-top:100px;
+}
+
+#sayac{
+font-size:60px;
+color:red;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<img src="../askon.png">
+
+<h2>Yönlendiriliyorsunuz</h2>
+
+<div id="sayac">3</div>
+
+<script>
+
+var s = 3;
+
+var geri = setInterval(function(){
+
+s--;
+
+document.getElementById("sayac").innerHTML = s;
+
+if(s==0){
+
+clearInterval(geri);
+
+window.location.href="../pdf/isci_evraklari_ornek.pdf";
+
+}
+
+},1000);
+
+</script>
+
+</body>
+</html>
